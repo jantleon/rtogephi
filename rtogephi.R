@@ -110,7 +110,7 @@ nodos_prev <- data.frame(BD$screen_name, BD$screen_name)
 nodos <- unique(nodos_prev)
 names(nodos) <- c("origen", "label")
 
-### Exportación a xlsx importable a Gephi
+### Exportación a xlsx importable a Gephi.
 
 install.packages("openxlsx")
 library(openxlsx)
