@@ -87,7 +87,7 @@ aristas1$clase[aristas1$respuesta != TRUE] <- "respuesta"
 aristas2 <- data.frame(aristas1$origen, aristas1$clase, aristas1$tocita, aristas1$torespuesta, aristas1$tort)
 aristas3 <- aristas2[aristas2$aristas1.clase != "tweet",]
 
-###Bucle de creación de variable que define tipo de interacción.
+###Bucle de creación de variable única de usuario de destino independientemente del tipo de interacción.
 
 for (i in 1:length(aristas3$aristas1.clase)) {
   if (aristas3$aristas1.clase[i] =="retweet") {
